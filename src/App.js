@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import './App.scss'
+import Particles from 'react-particles'
+import { loadFull } from 'tsparticles'
+import About from './pages/about/Index'
+import Home from './pages/home/Index'
+import Skill from './pages/skills/Index'
+import Projects from './pages/projects/Index'
+import Navbar from './pages/navbar/Index'
+import particles from './pages/utils.js/particles'
 function App() {
+  const handleInit = async (main) => {
+    await loadFull(main)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="App">
+        {/* <Particles id="particles" options={particles} init={handleInit} /> */}
+        <Navbar />
+
+        <div className="App_main_page">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skill" element={<Skill />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
