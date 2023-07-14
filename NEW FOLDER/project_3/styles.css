@@ -3,6 +3,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  position: relative;
 }
 .projects_content_cards_item_img_wrapper {
   width: 260px;

@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Particles id="particles" options={particles} init={handleInit} /> */}
+        <Particles id="particles" options={particles} init={handleInit} />
         <Navbar />
 
         <div className="App_main_page">
