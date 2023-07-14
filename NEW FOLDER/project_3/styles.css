@@ -1,3 +1,7 @@
+.projects {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .projects_content_cards {
   padding: 20px;
   display: flex;

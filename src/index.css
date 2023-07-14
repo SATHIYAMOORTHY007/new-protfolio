@@ -12,8 +12,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-y: hidden; 
-  overflow-x: hidden;
+
 }
 
 html{
