@@ -11,6 +11,10 @@ const Skillsutils = [
         percentage: 60,
       },
       {
+        SkillName: 'BOOTSTRAP',
+        percentage: 50,
+      },
+      {
         SkillName: 'JAVASCRIPT',
         percentage: 72,
       },
