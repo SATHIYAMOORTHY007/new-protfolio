@@ -4,15 +4,19 @@ const Skillsutils = [
     data: [
       {
         SkillName: 'HTML',
-        percentage: '80',
+        percentage: 80,
       },
       {
         SkillName: 'CSS',
-        percentage: '60',
+        percentage: 60,
       },
       {
         SkillName: 'JAVASCRIPT',
-        percentage: '72',
+        percentage: 72,
+      },
+      {
+        SkillName: 'REACTJS',
+        percentage: 70,
       },
     ],
   },
@@ -21,20 +25,20 @@ const Skillsutils = [
     data: [
       {
         SkillName: 'NODEJS',
-        percentage: '60',
+        percentage: 60,
       },
     ],
   },
   {
-    label: 'DATABSE',
+    label: 'DATABASE',
     data: [
       {
         SkillName: 'MONGODB',
-        percentage: '60',
+        percentage: 60,
       },
       {
         SkillName: 'MYSQL',
-        percentage: '50',
+        percentage: 50,
       },
     ],
   },
