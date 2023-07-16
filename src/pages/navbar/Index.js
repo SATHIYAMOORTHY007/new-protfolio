@@ -20,6 +20,10 @@ const data = [
     label: 'Projects',
     to: '/projects',
   },
+  {
+    label: 'Contact',
+    to: '/contact',
+  },
 ]
 function Index() {
   const [toggleIcon, setToggleIcon] = useState(false)

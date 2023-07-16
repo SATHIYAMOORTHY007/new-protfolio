@@ -1,53 +1,61 @@
-.projects {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-.projects_content_cards {
+.contact_content {
   padding: 20px;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+}
+.contact_content_header_text {
+  color: var(---yellow-them-main-color);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(---yellow-them-main-color);
+}
+.contact_content_form {
+  margin-top: 30px;
+}
+.contact_content_form_controlWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.contact_content_form_controlWrapper div {
   position: relative;
 }
-.projects_content_cards_item_img_wrapper {
-  width: 260px;
-  height: 300px;
-  margin: 7px;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-.projects_content_cards_item_img_wrapper img {
+.contact_content_form_controlWrapper div .inputname, .contact_content_form_controlWrapper div .inputemail, .contact_content_form_controlWrapper div .inputdes {
   width: 100%;
-  height: 60%;
+  border: 2px solid var(---yellow-them-main-color);
+  padding: 16px 12px;
+  transition: all 0.5s ease;
+  position: relative;
+  background-color: transparent;
+  color: var(---yellow-them-main-color);
 }
-.projects_content_cards_item_img_wrapper p {
-  color: white;
+.contact_content_form_controlWrapper div .namelabel, .contact_content_form_controlWrapper div .emaillabel, .contact_content_form_controlWrapper div .deslabel {
+  font-weight: 500;
+  bottom: 17px;
+  left: 12px;
+  transition: all 0.5s ease;
+  font-size: 16px;
+  color: whitesmoke;
 }
-
-.button {
-  text-decoration: none;
-  font-size: 1.2rem;
+.contact_content_form_controlWrapper div .inputname:focus, .contact_content_form_controlWrapper div .inputemail:focus, .contact_content_form_controlWrapper div .inputdes:focus {
+  outline: none;
 }
-
-/* @media only screen and (max-width:768px){
-    .projects_content_cards{
-        display: flex;
-        flex-direction: column;
-       justify-content: center;
-       align-items: center;
-
-       &_item_img_wrapper{
-        width: 260px;
-        height: 300px;
-       }
-    }
-    .button{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 2px;
-       margin-left:6em;
-
-    }
-} *//*# sourceMappingURL=styles.css.map */
+.contact_content_form button {
+  cursor: pointer;
+  padding: 10px 70px;
+  font-family: 2rem;
+  background: transparent;
+  color: var(---yellow-them-main-color);
+  border: 0.5px solid var(---yellow-them-main-color);
+  border-radius: 4px;
+  font-weight: 600;
+}
+.contact_content_form button:hover {
+  color: #000;
+  background-color: var(---yellow-them-main-color);
+}/*# sourceMappingURL=styles.css.map */

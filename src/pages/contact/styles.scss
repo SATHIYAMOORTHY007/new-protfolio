@@ -1,0 +1,70 @@
+.contact{
+    &_content{
+        padding: 20px;
+
+        &_header_text{
+            color: var(---yellow-them-main-color);
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.5em;
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(---yellow-them-main-color);
+        }
+       &_form{
+        margin-top:30px;
+
+        &_controlWrapper{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:40px;
+            margin-bottom: 30px;
+
+            div{
+                position: relative;
+                .inputname,.inputemail,.inputdes{
+                    width: 100%;
+                    border: 2px solid var(---yellow-them-main-color);
+                    padding: 16px 12px;
+                    transition: all 0.5s ease;
+                    position: relative;
+                    background-color: transparent;
+                    color:var(---yellow-them-main-color)
+                }
+                .namelabel,.emaillabel,.deslabel{
+                    font-weight: 500;
+                   
+                    bottom:17px;
+                    left:12px;
+                    transition: all 0.5s ease;
+                    font-size: 16px;
+                    color: whitesmoke;
+                }
+                .inputname:focus,.inputemail:focus,.inputdes:focus{
+                    outline: none;
+                }
+              
+            }
+        }
+        button{
+            cursor: pointer;
+            padding: 10px 70px;
+            font-family: 2rem;
+            background: transparent;
+            color: var(---yellow-them-main-color);
+            border:0.5px solid var(---yellow-them-main-color);
+            border-radius:4px;
+            font-weight: 600;
+            &:hover{
+                color: #000;
+                background-color: var(---yellow-them-main-color);
+
+            }
+        }
+        
+       }
+    }
+}
