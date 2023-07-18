@@ -40,10 +40,10 @@ const Skillsutils = [
         SkillName: 'MONGODB',
         percentage: 60,
       },
-      {
+      /*  {
         SkillName: 'MYSQL',
         percentage: 50,
-      },
+      }, */
     ],
   },
 ]

@@ -62,7 +62,7 @@ function Index() {
         <Animate
           play
           duration={1.5}
-          delay={1}
+          delay={0.5}
           start={{ transform: 'translateY(-1000px)' }}
           end={{ transform: 'translateY(0px)' }}
         >

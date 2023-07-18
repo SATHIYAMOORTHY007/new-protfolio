@@ -9,6 +9,7 @@ import Projects from './pages/projects/Index'
 import Navbar from './pages/navbar/Index'
 import particles from './pages/utils.js/particles'
 import Contact from './pages/contact/Contact'
+import Certificate from './pages/certification/Index'
 function App() {
   const handleInit = async (main) => {
     await loadFull(main)
@@ -27,6 +28,7 @@ function App() {
             <Route path="/skill" element={<Skill />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certificates" element={<Certificate />} />
           </Routes>
         </div>
       </div>

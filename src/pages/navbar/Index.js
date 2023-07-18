@@ -21,6 +21,10 @@ const data = [
     to: '/projects',
   },
   {
+    label: 'Certificates',
+    to: '/certificates',
+  },
+  {
     label: 'Contact',
     to: '/contact',
   },

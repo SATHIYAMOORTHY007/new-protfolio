@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHeader from '../pageheader/PageHeader'
-import { BsInfoCircleFill } from 'react-icons/bs'
+import { FaDiagramProject } from 'react-icons/fa6'
 import ImageOne from '../images/movie.png'
 import ImageTwo from '../images/collegeportal.png'
 import ImageThree from '../images/library.png'
@@ -52,7 +52,7 @@ function Index() {
     <section id="projects" className="projects">
       <PageHeader
         headerText="My Project's"
-        Icon={<BsInfoCircleFill size={40} />}
+        Icon={<FaDiagramProject size={40} />}
       />
       <div className="projects_content_cards">
         {data.map((item, i) => (

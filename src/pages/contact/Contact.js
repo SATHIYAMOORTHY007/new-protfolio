@@ -1,12 +1,13 @@
 import React from 'react'
-import { BsInfoCircleFill } from 'react-icons/bs'
+
 import PageHeader from '../pageheader/PageHeader'
 import { Animate } from 'react-simple-animate'
+import { BsChatLeftText } from 'react-icons/bs'
 import './styles.scss'
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <PageHeader headerText="contact" Icon={<BsInfoCircleFill size={40} />} />
+      <PageHeader headerText="contact" Icon={<BsChatLeftText size={40} />} />
       <div className="contact_content">
         <Animate
           play
