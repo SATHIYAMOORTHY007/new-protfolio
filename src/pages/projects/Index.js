@@ -79,10 +79,10 @@ function Index() {
         pause={false}
         iterationCount="1"
         direction="alternate"
-        duration={5}
+        duration={1}
         keyframes={[
-          'transform: rotateX(0) rotateY(0) rotateZ(0)',
-          'transform: rotateX(360deg) rotateY(360deg) ',
+          'transform: rotateX(0deg) rotateY(0deg)',
+          'transform: rotateX(260deg) rotateY(0deg) ',
         ]}
       >
         <div className="projects_content_cards">
