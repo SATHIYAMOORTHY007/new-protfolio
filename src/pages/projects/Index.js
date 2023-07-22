@@ -64,7 +64,7 @@ function Index() {
       name: 'url shortener(Fullstack)',
       Image: Image7,
       link: 'https://willowy-panda-a92a9f.netlify.app',
-      des: 'Long url converted to shot url',
+      des: 'Long url converted to shot url.',
     },
   ]
   return (
