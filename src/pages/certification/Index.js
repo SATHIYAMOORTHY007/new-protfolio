@@ -37,13 +37,13 @@ function Index() {
       link:
         'https://drive.google.com/file/d/1hNQ2a0ccsnJcDbxZT0B5nfdVYkwF6F4_/view?usp=drive_link',
     },
-    /*  {
+    {
       id: 4,
       name: 'JAVASCRIPT',
       Image: js,
       link:
         'https://drive.google.com/open?id=1R74FOn3PI69Vk0XYl6GhS3L8fKTC_yUT&usp=drive_copy',
-    }, */
+    },
     {
       id: 5,
       name: 'REACTJS',
