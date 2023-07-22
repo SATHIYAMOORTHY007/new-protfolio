@@ -17,10 +17,10 @@ function Index() {
           <div key={i} className="skill_content_wrapper_innercontent">
             <Animate
               play
-              duration={1}
-              delay={0.3}
-              start={{ transform: 'translateX(-200)' }}
-              end={{ transform: 'translateX(0)' }}
+              duration={1.5}
+              delay={0.5}
+              start={{ transform: 'translateY(1000px)' }}
+              end={{ transform: 'translateY(0px)' }}
             >
               <h3 className="skill_content_wrapper_innercontent_catagorytext">
                 {item.label}
