@@ -7,6 +7,7 @@ import ImageThree from '../images/library.png'
 import Image4 from '../images/weather.png'
 import Image5 from '../images/name.png'
 import Image6 from '../images/calculater.png'
+import Image7 from '../images/url shortner.png'
 import './styles.scss'
 import { AnimateKeyframes } from 'react-simple-animate'
 import { Link } from 'react-router-dom'
@@ -14,7 +15,7 @@ function Index() {
   const data = [
     {
       id: 1,
-      name: 'BookShows (Fullstck)',
+      name: 'BookShows (Fullstack)',
       Image: ImageOne,
       link: 'https://dapper-cucurucho-7b2a5e.netlify.app',
       des: 'Book Your Movie Tickets. this app working like bookmyshow',
@@ -57,6 +58,13 @@ function Index() {
       Image: Image6,
       link: 'https://willowy-panda-a92a9f.netlify.app',
       des: 'this is used to perform basic calculation',
+    },
+    {
+      id: 7,
+      name: 'url shortener(Fullstack)',
+      Image: Image7,
+      link: 'https://willowy-panda-a92a9f.netlify.app',
+      des: 'Long url converted to shot url',
     },
   ]
   return (
