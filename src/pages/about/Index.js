@@ -2,8 +2,9 @@ import React from 'react'
 import PageHeader from '../pageheader/PageHeader'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import { Animate } from 'react-simple-animate'
-import { DiApple, DiAndroid } from 'react-icons/di'
+
 import { FaDev, FaDatabase } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaReact, FaNodeJs } from 'react-icons/fa'
 import './styles.scss'
 function Index() {
   return (
@@ -26,7 +27,7 @@ function Index() {
             </p>
 
             <h3 className="personal_info">Education Information</h3>
-            <table className="table">
+            {/*  <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Course</th>
@@ -56,12 +57,18 @@ function Index() {
                   <th>72</th>
                 </tr>
               </tbody>
-            </table>
+            </table> */}
+            <a
+              href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
+              target="_blank"
+            >
+              <button>Resume</button>
+            </a>
           </Animate>
         </div>
         <Animate
           play
-          duration={1.5}
+          duration={1}
           delay={0.5}
           start={{ transform: 'translateY(-1000px)' }}
           end={{ transform: 'translateY(0px)' }}
@@ -69,16 +76,16 @@ function Index() {
           <div className="about_content_services">
             <div className="about_content_services_innercontent">
               <div>
-                <FaDev size={60} color="var(---yellow-them-main-color)" />
+                <FaReact size={60} color="var(---yellow-them-main-color)" />
               </div>
               <div>
                 <FaDatabase size={60} color="var(---yellow-them-main-color)" />
               </div>
               <div>
-                <DiAndroid size={60} color="var(---yellow-them-main-color)" />
+                <FaNodeJs size={60} color="var(---yellow-them-main-color)" />
               </div>
               <div>
-                <DiApple size={60} color="var(---yellow-them-main-color)" />
+                <FaCss3 size={60} color="var(---yellow-them-main-color)" />
               </div>
             </div>
           </div>

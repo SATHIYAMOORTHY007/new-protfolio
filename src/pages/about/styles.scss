@@ -36,13 +36,27 @@
                 border: 1px dashed var(---yellow-them-main-color);
                 border-collapse: collapse;
               }
-
+              button{
+                cursor: pointer;
+                padding: 10px 70px;
+                font-size: 2rem;
+                background: transparent;
+                color: var(---yellow-them-main-color);
+                border: 1.5px solid var(---yellow-them-main-color);
+                border-radius: 4px;
+                font-family: 500;
+             
+                &:hover{
+                    background-color: var(---yellow-them-main-color);
+                    color: #000000;
+                } }
         }
         &_services{
             display: flex;
             justify-content: center;
             align-items: center;
-           position: relative;
+            position: relative;
+            left:200px;
             &_innercontent{
                 width: 350px;
                 height: 350px;

@@ -12,7 +12,7 @@ function Index() {
       <section id="home" className="home">
         <div className="home_text_wrapper">
           <h1>
-            Hello, I'm Sathiya moorthy S
+            Hello,<span class="wave">👋🏻</span> I'm Sathiya moorthy S
             <br />
             <span>Full Stack Developer</span>
           </h1>

@@ -19,30 +19,38 @@ function Index() {
       Image: ImageOne,
       link: 'https://dapper-cucurucho-7b2a5e.netlify.app',
       des: 'Book Your Movie Tickets. this app working like bookmyshow',
+      front: 'https://github.com/SATHIYAMOORTHY007/guvi-hackathon2-frontend',
+      back: 'https://github.com/SATHIYAMOORTHY007/guvi-hackathon2-backend',
     },
     {
       id: 2,
-      name: 'collegeportal (Fullstack)',
+      name: 'College Portal (Fullstack)',
       Image: ImageTwo,
       link: 'https://abc-college-portal.netlify.app',
       des:
         'This webapp working like role based.examiner add the student exam marks and leaves, student only view there info only,principal view all of them ,admin only add examiner & principal',
+      front: 'https://github.com/SATHIYAMOORTHY007/college-portal-frontend',
+      back: 'https://github.com/SATHIYAMOORTHY007/college-portal-backend',
     },
     {
       id: 3,
-      name: 'library (Frontend only)',
+      name: 'Library (Frontend only)',
       Image: ImageThree,
       link: 'https://sage-treacle-4afc00.netlify.app',
       des:
         'Mokeapi used to show all the book list for here.we will check the books quantity and also add,delete or update the book list',
+      front: 'https://github.com/SATHIYAMOORTHY007/librarymanagement',
+      back: 'http://localhost:3001/projects',
     },
     {
       id: 4,
-      name: 'weather Report (Frontend only)',
+      name: 'Weather Report (Frontend only)',
       Image: Image4,
       link: 'https://heroic-twilight-8b4c2e.netlify.app',
       des:
         'Weather Api used to display all country nation flags,latitudes if we click check weather button it will show the weather of particular country',
+      front: 'https://github.com/SATHIYAMOORTHY007/weather-api',
+      back: 'http://localhost:3001/projects',
     },
     {
       id: 5,
@@ -51,20 +59,26 @@ function Index() {
       link: 'https://golden-daifuku-0d77c4.netlify.app',
       des:
         'we will give any name to the input box, it will check to mokeapi and give the each country probability',
+      front: 'https://github.com/SATHIYAMOORTHY007/hackkathon',
+      back: 'http://localhost:3001/projects',
     },
     {
       id: 6,
-      name: 'calculater(Frontend only)',
+      name: 'Calculater(Frontend only)',
       Image: Image6,
       link: 'https://willowy-panda-a92a9f.netlify.app',
       des: 'this is used to perform basic calculation',
+      front: 'https://github.com/SATHIYAMOORTHY007/calculator',
+      back: 'http://localhost:3001/projects',
     },
     {
       id: 7,
-      name: 'url shortener(Fullstack)',
+      name: 'url Shortener(Fullstack)',
       Image: Image7,
       link: 'https://willowy-panda-a92a9f.netlify.app',
       des: 'Long url converted to shot url.',
+      front: 'https://github.com/SATHIYAMOORTHY007/frontend',
+      back: 'https://github.com/SATHIYAMOORTHY007/backend',
     },
   ]
   return (
@@ -81,8 +95,8 @@ function Index() {
         direction="alternate"
         duration={1}
         keyframes={[
-          'transform: rotateX(0deg) rotateY(0deg)',
-          'transform: rotateX(260deg) rotateY(0deg) ',
+          'transform: rotateX(0deg) rotateY(0deg) skewX(180deg)',
+          'transform: rotateX(0deg) rotateY(0deg) ',
         ]}
       >
         <div className="projects_content_cards">
@@ -94,6 +108,12 @@ function Index() {
                   <img src={item.Image} alt="images" />
 
                   <summary>{item.des}</summary>
+                  <a href={item.front} target="_black">
+                    Frontend Url
+                  </a>
+                  <a href={item.back} target="_black">
+                    Backend Url
+                  </a>
                 </div>
               </div>
             </a>
