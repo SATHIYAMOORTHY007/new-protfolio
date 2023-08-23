@@ -51,8 +51,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar_container_logo {
+    display: none;
+  }
+  .navbar_container_menu {
+    position: absolute;
+  }
   .navbar_container_menu_list {
-    line-height: 4px;
+    line-height: 2px;
     margin-right: 0rem;
     font-size: 1rem;
   }

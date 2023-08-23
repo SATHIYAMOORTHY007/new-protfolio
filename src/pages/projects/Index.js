@@ -33,14 +33,22 @@ function Index() {
       back: 'https://github.com/SATHIYAMOORTHY007/college-portal-backend',
     },
     {
+      id: 7,
+      name: 'url Shortener(Fullstack)',
+      Image: Image7,
+      link: 'https://willowy-panda-a92a9f.netlify.app',
+      des: 'Long url converted to shot url.',
+      front: 'https://github.com/SATHIYAMOORTHY007/frontend',
+      back: 'https://github.com/SATHIYAMOORTHY007/backend',
+    },
+    {
       id: 3,
       name: 'Library (Frontend only)',
       Image: ImageThree,
       link: 'https://sage-treacle-4afc00.netlify.app',
       des:
-        'Mokeapi used to show all the book list for here.we will check the books quantity and also add,delete or update the book list',
+        'Mockapi used to show all the book list for here.we will check the books quantity and also add,delete or update the book list',
       front: 'https://github.com/SATHIYAMOORTHY007/librarymanagement',
-      back: 'http://localhost:3001/projects',
     },
     {
       id: 4,
@@ -50,7 +58,6 @@ function Index() {
       des:
         'Weather Api used to display all country nation flags,latitudes if we click check weather button it will show the weather of particular country',
       front: 'https://github.com/SATHIYAMOORTHY007/weather-api',
-      back: 'http://localhost:3001/projects',
     },
     {
       id: 5,
@@ -58,9 +65,8 @@ function Index() {
       Image: Image5,
       link: 'https://golden-daifuku-0d77c4.netlify.app',
       des:
-        'we will give any name to the input box, it will check to mokeapi and give the each country probability',
+        'we will give any name to the input box, it will check to mockapi and give the each country probability',
       front: 'https://github.com/SATHIYAMOORTHY007/hackkathon',
-      back: 'http://localhost:3001/projects',
     },
     {
       id: 6,
@@ -69,16 +75,6 @@ function Index() {
       link: 'https://willowy-panda-a92a9f.netlify.app',
       des: 'this is used to perform basic calculation',
       front: 'https://github.com/SATHIYAMOORTHY007/calculator',
-      back: 'http://localhost:3001/projects',
-    },
-    {
-      id: 7,
-      name: 'url Shortener(Fullstack)',
-      Image: Image7,
-      link: 'https://willowy-panda-a92a9f.netlify.app',
-      des: 'Long url converted to shot url.',
-      front: 'https://github.com/SATHIYAMOORTHY007/frontend',
-      back: 'https://github.com/SATHIYAMOORTHY007/backend',
     },
   ]
   return (
@@ -111,9 +107,13 @@ function Index() {
                   <a href={item.front} target="_black">
                     Frontend Url
                   </a>
-                  <a href={item.back} target="_black">
-                    Backend Url
-                  </a>
+                  {item.back ? (
+                    <a href={item.back} target="_black">
+                      Backend Url
+                    </a>
+                  ) : (
+                    ''
+                  )}
                 </div>
               </div>
             </a>

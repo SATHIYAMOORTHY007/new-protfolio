@@ -26,7 +26,7 @@ function Index() {
               the required functionality and the technology stack.
             </p>
 
-            <h3 className="personal_info">Education Information</h3>
+            {/*  <h3 className="personal_info">Education Information</h3> */}
             {/*  <table className="table">
               <thead>
                 <tr>
@@ -58,11 +58,29 @@ function Index() {
                 </tr>
               </tbody>
             </table> */}
+          </Animate>
+          <Animate
+            play
+            duration={1.5}
+            delay={1}
+            start={{ transform: 'translateX(-900px)' }}
+            end={{ transform: 'translateX(0px)' }}
+          >
             <a
               href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
               target="_blank"
             >
-              <button>Resume</button>
+              <button className="about_content_personalInfo_buttons">
+                Resume
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sakthisampth-sampth-907955188/"
+              target="_blank"
+            >
+              <button className="about_content_personalInfo_buttons">
+                LinkedIn
+              </button>
             </a>
           </Animate>
         </div>
