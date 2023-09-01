@@ -1,39 +1,71 @@
-.about_content {
-  display: flex;
-  gap: 20px;
-  padding: 60px;
+.contact_content {
+  padding: 20px;
 }
-.about_content_personalInfo {
-  width: 50%;
+.contact_content_header_text {
+  color: var(---yellow-them-main-color);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(---yellow-them-main-color);
 }
-.about_content_personalInfo h3 {
-  margin-bottom: 10px;
-  font-size: 2.6rem;
-  font-weight: 500;
+.contact_content_form {
+  margin-top: 30px;
+}
+.contact_content_form_controlWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.contact_content_form_controlWrapper div {
+  position: relative;
+}
+.contact_content_form_controlWrapper div .inputname, .contact_content_form_controlWrapper div .inputemail, .contact_content_form_controlWrapper div .inputdes {
+  width: 100%;
+  border: 2px solid var(---yellow-them-main-color);
+  padding: 16px 12px;
+  transition: all 0.5s ease;
+  position: relative;
+  background-color: transparent;
   color: var(---yellow-them-main-color);
 }
-.about_content_personalInfo h3.personal_info {
-  padding-top: 25px;
-}
-.about_content_personalInfo p {
-  color: white;
-  font-size: 1.6rem;
-  line-height: 1.65rem;
-}
-.about_content_personalInfo .table {
+.contact_content_form_controlWrapper div .namelabel, .contact_content_form_controlWrapper div .emaillabel, .contact_content_form_controlWrapper div .deslabel {
+  font-weight: 500;
+  bottom: 17px;
+  left: 12px;
+  transition: all 0.5s ease;
+  font-size: 16px;
   color: whitesmoke;
-  width: 50%;
-  font-size: 1.6rem;
-  line-height: 1.65rem;
 }
-.about_content_personalInfo table, .about_content_personalInfo th, .about_content_personalInfo td {
-  border: 1px dashed var(---yellow-them-main-color);
-  border-collapse: collapse;
+.contact_content_form_controlWrapper div .inputname:focus, .contact_content_form_controlWrapper div .inputemail:focus, .contact_content_form_controlWrapper div .inputdes:focus {
+  outline: none;
 }
-.about_content_personalInfo button {
+.contact_content_form button {
   cursor: pointer;
   padding: 10px 70px;
-  margin: 4rem 1rem;
+  font-family: 2rem;
+  background: transparent;
+  color: var(---yellow-them-main-color);
+  border: 0.5px solid var(---yellow-them-main-color);
+  border-radius: 4px;
+  font-weight: 600;
+}
+.contact_content_form button:hover {
+  color: #000;
+  background-color: var(---yellow-them-main-color);
+}
+.contact_content_form .submit {
+  float: right;
+}
+
+button {
+  margin: 0.5rem;
+  cursor: pointer;
   font-size: 2rem;
   background: transparent;
   color: var(---yellow-them-main-color);
@@ -41,64 +73,7 @@
   border-radius: 4px;
   font-family: 500;
 }
-.about_content_personalInfo button:hover {
+button:hover {
   background-color: var(---yellow-them-main-color);
   color: #000000;
-}
-.about_content_services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 200px;
-}
-.about_content_services_innercontent {
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(180px, var(---yellow-them-main-color), transparent 90%);
-  border-radius: 50%;
-  border: 1.5px solid var(---yellow-them-main-color);
-  animation: rotation 10s linear 1s infinite;
-}
-.about_content_services_innercontent div:nth-child(1) {
-  position: absolute;
-  top: -7%;
-  left: 40%;
-}
-.about_content_services_innercontent div:nth-child(2) {
-  position: absolute;
-  left: 92%;
-  top: 40%;
-}
-.about_content_services_innercontent div:nth-child(3) {
-  position: absolute;
-  top: 90%;
-  left: 48%;
-}
-.about_content_services_innercontent div:nth-child(4) {
-  position: absolute;
-  left: -7%;
-  top: 40%;
-}
-
-@keyframes rotation {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@media only screen and (max-width: 768px) {
-  .about_content {
-    display: flex;
-    flex-direction: column;
-  }
-  .about_content_personalInfo, .about_content_services {
-    width: 100%;
-  }
-  .about_content_services {
-    /*   margin: 10em 0em;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(120px,var(---yellow-them-main-color),transparent 120%); */
-    display: none;
-  }
 }/*# sourceMappingURL=styles.css.map */

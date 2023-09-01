@@ -36,7 +36,7 @@ function Index() {
       id: 7,
       name: 'url Shortener(Fullstack)',
       Image: Image7,
-      link: 'https://willowy-panda-a92a9f.netlify.app',
+      link: 'https://relaxed-sherbet-24bea5.netlify.app/',
       des: 'Long url converted to shot url.',
       front: 'https://github.com/SATHIYAMOORTHY007/frontend',
       back: 'https://github.com/SATHIYAMOORTHY007/backend',

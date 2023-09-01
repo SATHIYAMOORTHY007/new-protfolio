@@ -64,7 +64,24 @@
 
             }
         }
-        
+        .submit{
+            float: right;
+        }
        }
     }
 }
+button{
+    margin:0.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background: transparent;
+    color: var(---yellow-them-main-color);
+    border: 1.5px solid var(---yellow-them-main-color);
+    border-radius: 4px;
+    font-family: 500;
+ 
+    &:hover{
+        background-color: var(---yellow-them-main-color);
+        color: #000000;
+    } }
+    
