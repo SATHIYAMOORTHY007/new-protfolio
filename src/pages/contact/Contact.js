@@ -1,8 +1,8 @@
 import React from 'react'
-
 import PageHeader from '../pageheader/PageHeader'
 import { Animate } from 'react-simple-animate'
 import { BsChatLeftText } from 'react-icons/bs'
+import { FaGithub, FaLinkedinIn, FaFile } from 'react-icons/fa'
 import './styles.scss'
 function Contact() {
   return (
@@ -62,34 +62,36 @@ function Contact() {
                 />
               </div>
             </div>
-            <div>
-              <Animate
-                play
-                duration={1.5}
-                delay={1}
-                start={{ transform: 'translateX(-900px)' }}
-                end={{ transform: 'translateX(0px)' }}
-              >
-                <a
-                  href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
-                  target="_blank"
-                >
-                  <button className="about_content_personalInfo_buttons">
-                    Resume
-                  </button>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/sakthisampth-sampth-907955188/"
-                  target="_blank"
-                >
-                  <button className="about_content_personalInfo_buttons">
-                    LinkedIn
-                  </button>
-                </a>
-              </Animate>
-            </div>
+
             <button className="submit">Sumbit</button>
           </form>
+          <div>
+            <Animate
+              play
+              duration={1.5}
+              delay={1}
+              start={{ transform: 'translateX(-900px)' }}
+              end={{ transform: 'translateX(0px)' }}
+            >
+              {/* LinkedIn */}
+              <a
+                href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
+                target="_blank"
+              >
+                <FaFile size={60} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sakthisampth-sampth-907955188/"
+                target="_blank"
+              >
+                <FaLinkedinIn size={60} />
+              </a>
+              {/* FaGithub  */}
+              <a href="https://github.com/SATHIYAMOORTHY007" target="_blank">
+                <FaGithub size={60} />
+              </a>
+            </Animate>
+          </div>
         </Animate>
       </div>
     </section>

@@ -2,7 +2,7 @@ import React from 'react'
 import PageHeader from '../pageheader/PageHeader'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import { Animate } from 'react-simple-animate'
-
+import { FaGithub, FaLinkedinIn, FaFile } from 'react-icons/fa'
 import { FaDev, FaDatabase } from 'react-icons/fa'
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from 'react-icons/fa'
 import './styles.scss'
@@ -66,12 +66,13 @@ function Index() {
             start={{ transform: 'translateX(-900px)' }}
             end={{ transform: 'translateX(0px)' }}
           >
+            {/* LinkedIn */}
             <a
               href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
               target="_blank"
             >
               <button className="about_content_personalInfo_buttons">
-                Resume
+                <FaFile size={60} />
               </button>
             </a>
             <a
@@ -79,7 +80,13 @@ function Index() {
               target="_blank"
             >
               <button className="about_content_personalInfo_buttons">
-                LinkedIn
+                <FaLinkedinIn size={60} />
+              </button>
+            </a>
+            {/* FaGithub  */}
+            <a href="https://github.com/SATHIYAMOORTHY007" target="_blank">
+              <button className="about_content_personalInfo_buttons">
+                <FaGithub size={60} />
               </button>
             </a>
           </Animate>
