@@ -75,7 +75,7 @@ function Contact() {
             >
               {/* LinkedIn */}
               <a
-                href="https://drive.google.com/file/d/1BrkHsN8OAcuiaDouVRqYNcRbvbmlZ_Uz/view?usp=sharing"
+                href="https://drive.google.com/file/d/1E2t3AL9a9tCZ7zJeKFJ2hZAslP4o_XVn/view?usp=sharing"
                 target="_blank"
               >
                 <FaFile size={60} />
